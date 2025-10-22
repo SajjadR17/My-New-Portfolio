@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    direction: ltr;
+    box-sizing: border-box;
+    font-family: Vazirmatn, Poppins;
+}
+
+body {
+    font-family: "Vazirmatn", "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    cursor: default;
+    background-image: url(Background.jpg);
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

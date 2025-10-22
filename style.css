@@ -1,0 +1,146 @@
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+header nav img {
+    width: 90px;
+    height: 30px;
+    user-select: none;
+}
+
+header nav .menu-icone svg {
+    width: 30px;
+    height: 30px;
+}
+
+header nav .nav-title span {
+    text-align: center;
+    padding: 10px;
+    color: rgb(192, 191, 191);
+    user-select: none;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: auto;
+    padding: 10px;
+}
+
+.profile-about {
+    color: white;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-about h1 {
+    display: inline-block;
+    margin: 3px;
+    margin-bottom: 3px;
+}
+
+.profile-about h2 {
+    margin: 7px;
+    margin-bottom: 3px;
+}
+
+.profile-about h5 {
+    margin: 7px;
+    margin-bottom: 3px;
+}
+
+.profile-about h3 {
+    margin: 7px;
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
+
+.profile-about #developer {
+    color: #d6e9f7;
+}
+
+.profile-about #name {
+    color: #85aace;
+}
+
+
+main .contact-icons {
+    display: inline-block;
+}
+
+main .contact-icons svg {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding: 5px;
+    border: 1px gray solid;
+    border-radius: 40%;
+    transition: transform 0.3s ease;
+}
+
+main .contact-icons svg:hover {
+    transform: scale(1.1);
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.skill h4 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.projects {
+    align-items: center;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.projects h2 {
+    color: #c6d6f0;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.about h4 {
+    color: #c6d6f0;
+
+}
+
+.about h2 {
+    color: #85aace;
+    text-align: center;
+}
+
+.about h3 {
+    color: #85aace;
+    text-align: center;
+}
