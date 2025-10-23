@@ -35,29 +35,24 @@ header nav .nav-title span {
 .profile-about {
     color: white;
     align-items: center;
-    margin: 20px;
+    margin: auto;
 }
 
 .profile-about h1 {
     display: inline-block;
-    margin: 3px;
-    margin-bottom: 3px;
+    margin: auto;
 }
 
 .profile-about h2 {
-    margin: 7px;
-    margin-bottom: 3px;
+    margin: auto;
 }
 
 .profile-about h5 {
-    margin: 7px;
-    margin-bottom: 3px;
+    margin: auto;
 }
 
 .profile-about h3 {
-    margin: 7px;
-    margin-bottom: 3px;
-    margin-top: 20px;
+    margin: auto;
 }
 
 .profile-about #developer {
@@ -113,9 +108,8 @@ main .contact-icons svg:hover {
 .projects {
     align-items: center;
     color: white;
-    margin: 20px;
-    padding: 10px;
-    margin-top: auto;
+    margin: auto;
+    padding: auto;
 }
 
 .projects h2 {
@@ -125,14 +119,15 @@ main .contact-icons svg:hover {
 .about {
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    padding: 10px;
+    margin: auto;
+    padding: auto;
     margin-top: auto;
 }
 
 .about h4 {
     color: #c6d6f0;
-
+    width: 95%;
+    margin: auto;
 }
 
 .about h2 {
