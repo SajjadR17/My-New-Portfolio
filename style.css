@@ -8,7 +8,7 @@ header nav {
 }
 
 header nav img {
-    width: 90px;
+    width: 80px;
     height: 30px;
     user-select: none;
 }
@@ -27,9 +27,9 @@ header nav .nav-title span {
 
 .profile {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: auto;
-    padding: 10px;
+    padding: 15px;
 }
 
 .profile-about {
@@ -63,6 +63,9 @@ header nav .nav-title span {
     color: #85aace;
 }
 
+hr{
+    width: auto;
+}
 
 main .contact-icons {
     display: inline-block;
