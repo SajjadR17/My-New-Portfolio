@@ -29,13 +29,13 @@ header nav .nav-title span {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: auto;
-    padding: 15px;
+    gap: 15px;
 }
 
 .profile-about {
     color: white;
-    align-items: center;
     margin: auto;
+    padding: 10px;
 }
 
 .profile-about h1 {
@@ -53,6 +53,7 @@ header nav .nav-title span {
 
 .profile-about h3 {
     margin: auto;
+    padding-top: 10px;
 }
 
 .profile-about #developer {
@@ -61,10 +62,6 @@ header nav .nav-title span {
 
 .profile-about #name {
     color: #85aace;
-}
-
-hr{
-    width: auto;
 }
 
 main .contact-icons {
@@ -109,10 +106,9 @@ main .contact-icons svg:hover {
 }
 
 .projects {
-    align-items: center;
     color: white;
     margin: auto;
-    padding: auto;
+    padding: 10px;
 }
 
 .projects h2 {
