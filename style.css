@@ -57,11 +57,11 @@ header nav .nav-title span {
 }
 
 .profile-about #developer {
-    color: #d6e9f7;
+    color: #7a7cde;
 }
 
 .profile-about #name {
-    color: #85aace;
+    color: #7a7cde;
 }
 
 main .contact-icons {
@@ -112,7 +112,7 @@ main .contact-icons svg:hover {
 }
 
 .projects h2 {
-    color: #c6d6f0;
+    color: #7a7cde;
 }
 
 .about {
@@ -124,17 +124,17 @@ main .contact-icons svg:hover {
 }
 
 .about h4 {
-    color: #c6d6f0;
+    color: #e7e7e7;
     width: 95%;
     margin: auto;
 }
 
 .about h2 {
-    color: #85aace;
+    color: #949494;
     text-align: center;
 }
 
 .about h3 {
-    color: #85aace;
+    color: #e7e7e7;
     text-align: center;
 }
