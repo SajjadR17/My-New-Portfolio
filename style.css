@@ -20,13 +20,14 @@ header nav .nav-left {
   gap: 20px;
 }
 
-header nav .nav-left span {
+header nav .nav-left div span {
   color: white;
   font-size: 1em;
   transition: all 0.3s ease;
+  gap: 20px;
 }
 
-header nav .nav-left span:hover {
+header nav .nav-left div span:hover {
   color: rgb(229, 228, 228);
   cursor: pointer;
   transform: scale(1.1);
@@ -113,33 +114,33 @@ main .contact-icons img:hover {
   transform: scale(1.2);
 }
 
-.title {
+.skill-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
 
-.title h2 {
+.skill-title h2 {
   color: white;
   margin: 15px;
 }
 
-.title h4 {
+.skill-title h4 {
   color: white;
   margin: 15px;
 }
 
 .skill {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  gap: 40px;
+  gap: 20px;
 }
 
 .skill .icon {
@@ -155,6 +156,14 @@ main .contact-icons img:hover {
   color: rgb(163, 163, 163);
 }
 
+.skill .icon {
+  transition: all 0.3s ease;
+}
+
+.skill .icon:hover {
+  transform: scale(1.2);
+}
+
 .about {
   justify-content: center;
   align-items: center;
@@ -168,6 +177,7 @@ main .contact-icons img:hover {
   width: 95%;
   margin: auto;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about h2 {
@@ -187,6 +197,7 @@ main .contact-icons img:hover {
   height: 50px;
   border: 1px solid gray;
   border-radius: 30px;
+  text-align: center;
 }
 
 .contact button {
@@ -195,16 +206,34 @@ main .contact-icons img:hover {
   border: 1px solid gray;
   border-radius: 30px;
   margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  transform: scale(1.1);
 }
 
 input:focus {
-  border: none;
+  outline: none;
   text-align: center;
 }
 
 input::placeholder {
-  color: #000000;
+  color: #696969;
   text-align: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+#message {
+  height: 150px;
+}
+
+.contact h2 {
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -212,11 +241,15 @@ input::placeholder {
     display: none;
   }
 
-  .title h4 {
+  .skill-title {
+    display: block;
+  }
+
+  .skill-title h4 {
     display: none;
   }
 
-  .title h2 {
+  .skill-title h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
