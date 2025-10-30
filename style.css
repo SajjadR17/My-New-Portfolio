@@ -187,12 +187,29 @@ main .contact-icons img:hover {
 
 .contact {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-img img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 50px;
+}
+
+.form {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact input {
+.form input {
   width: 350px;
   height: 50px;
   border: 1px solid gray;
@@ -200,8 +217,8 @@ main .contact-icons img:hover {
   text-align: center;
 }
 
-.contact button {
-  width: 100px;
+.form button {
+  width: 350px;
   height: 50px;
   border: 1px solid gray;
   border-radius: 30px;
@@ -210,8 +227,8 @@ main .contact-icons img:hover {
   transition: all 0.3s ease;
 }
 
-.contact button:hover {
-  transform: scale(1.1);
+.form button:hover {
+  transform: scale(1.05);
 }
 
 input:focus {
@@ -232,7 +249,7 @@ input:focus::placeholder {
   height: 150px;
 }
 
-.contact h2 {
+.form h2 {
   color: white;
 }
 
@@ -253,5 +270,11 @@ input:focus::placeholder {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-img img {
+    display: none;
   }
 }
