@@ -1,140 +1,224 @@
+header {
+  border: 1px solid rgb(37, 37, 99);
+  border-radius: 20px;
+  background-color: rgb(37, 37, 99);
+  margin: 20px 5px;
+  padding: 5px;
+}
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+header nav .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .nav-left span {
+  color: white;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+header nav .nav-left span:hover {
+  color: rgb(229, 228, 228);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 header nav img {
-    width: 80px;
-    height: 30px;
-    user-select: none;
+  width: 70px;
+  height: 25px;
+  margin-top: 5px;
 }
 
 header nav .menu-icone svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
 }
 
-header nav .nav-title span {
-    text-align: center;
-    padding: 10px;
-    color: rgb(192, 191, 191);
-    user-select: none;
+header nav .menu-icone svg:hover {
+  transform: scale(1.1);
 }
 
 .profile {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: auto;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: auto;
+  gap: 15px;
 }
 
 .profile-about {
-    color: white;
-    margin: auto;
-    padding: 10px;
+  color: white;
+  margin: 20px;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-about h1 {
-    display: inline-block;
-    margin: auto;
+  display: inline-block;
+  margin: auto;
 }
 
 .profile-about h2 {
-    margin: auto;
+  margin: auto;
 }
 
 .profile-about h5 {
-    margin: auto;
+  margin: auto;
 }
 
 .profile-about h3 {
-    margin: auto;
-    padding-top: 10px;
+  margin: auto;
+  padding-top: 10px;
 }
 
 .profile-about #developer {
-    color: #7a7cde;
+  color: #7a7cde;
 }
 
 .profile-about #name {
-    color: #7a7cde;
+  color: #7a7cde;
+}
+
+.profile-img {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 300px;
+  height: 300px;
 }
 
 main .contact-icons {
-    display: inline-block;
+  display: inline-block;
 }
 
-main .contact-icons svg {
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-    padding: 5px;
-    border: 1px gray solid;
-    border-radius: 40%;
-    transition: transform 0.3s ease;
+main .contact-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  padding: 5px;
+  transition: transform 0.3s ease;
 }
 
-main .contact-icons svg:hover {
-    transform: scale(1.1);
+main .contact-icons img:hover {
+  transform: scale(1.2);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.title h2 {
+  color: white;
+  margin: 15px;
+}
+
+.title h4 {
+  color: white;
+  margin: 15px;
 }
 
 .skill {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 40px;
 }
 
-.skill h4 {
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: 1px solid gray;
-    border-radius: 30px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-    width: 90%;
-    margin-bottom: 10px;
+.skill .icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
-.projects {
-    color: white;
-    margin: auto;
-    padding: 10px;
-}
-
-.projects h2 {
-    color: #7a7cde;
+.skill .skill-name {
+  margin: auto;
+  color: rgb(163, 163, 163);
 }
 
 .about {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: auto;
-    margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  margin-top: auto;
 }
 
 .about h4 {
-    color: #e7e7e7;
-    width: 95%;
-    margin: auto;
+  color: #ffffff;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .about h2 {
-    color: #949494;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
-.about h3 {
-    color: #e7e7e7;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact input {
+  width: 350px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+.contact button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin: 15px;
+}
+
+input:focus {
+  border: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #000000;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .nav-left span {
+    display: none;
+  }
+
+  .title h4 {
+    display: none;
+  }
+
+  .title h2 {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
