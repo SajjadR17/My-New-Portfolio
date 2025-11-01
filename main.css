@@ -8,17 +8,17 @@ a {
   font-family: Vazirmatn, Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 16px;
   margin: 5px;
   cursor: default;
   background: #020024;
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(95, 95, 164) 100%
-  );
+  background: linear-gradient(135deg, #1e1e2f, #3f2b96, #a8c0ff);
   user-select: none;
 }
 
