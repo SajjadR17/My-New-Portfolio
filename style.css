@@ -16,15 +16,15 @@ header nav .nav-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
-header nav .nav-left div span {
+header nav .nav-left span {
   color: white;
   transition: all 0.3s ease;
 }
 
-header nav .nav-left div span:hover {
+header nav .nav-left span:hover {
   color: rgb(229, 228, 228);
   cursor: pointer;
   transform: scale(1.1);
@@ -193,6 +193,7 @@ main .contact-icons img:hover {
   border-radius: 25px;
   transition: all 0.3s ease;
   padding: 10px;
+  height: 280px;
 }
 
 .projects img:hover {
@@ -270,7 +271,7 @@ main .contact-icons img:hover {
   margin: auto;
   margin-bottom: 20px;
   text-align: center;
-  padding: 30px;
+  padding: 5px;
 }
 
 .about h2 {
@@ -386,6 +387,13 @@ input:focus::placeholder {
 
   .project-title h2 {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
