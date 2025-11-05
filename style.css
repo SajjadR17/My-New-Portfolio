@@ -1,7 +1,4 @@
-span {
-  line-height: 1.6;
-  letter-spacing: 0.3px;
-}
+/* go top button */
 
 #go-top {
   display: none;
@@ -32,6 +29,8 @@ span {
   transition: all 1s ease;
 }
 
+/* header */
+
 header {
   border: 1px solid rgb(37, 37, 99);
   border-radius: 20px;
@@ -54,14 +53,24 @@ header nav .nav-left {
 }
 
 header nav .nav-left a span {
+  position: relative;
   color: white;
-  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-header nav .nav-left a span:hover {
-  color: rgb(229, 228, 228);
-  cursor: pointer;
-  transform: scale(1.1);
+header nav .nav-left a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.5s ease;
+}
+
+header nav .nav-left a:hover span::after {
+  width: 100%;
 }
 
 header nav img {
@@ -80,6 +89,8 @@ header nav .menu-icone svg:hover {
   transform: scale(1.1);
 }
 
+/* hero section */
+
 .profile {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -97,10 +108,6 @@ header nav .menu-icone svg:hover {
 
 .profile-about h1 {
   display: inline-block;
-  margin: auto;
-}
-
-.profile-about h2 {
   margin: auto;
 }
 
@@ -129,6 +136,8 @@ header nav .menu-icone svg:hover {
   height: 300px;
 }
 
+/* hero section contact links */
+
 main .contact-icons {
   display: inline-block;
 }
@@ -144,6 +153,8 @@ main .contact-icons img {
 main .contact-icons img:hover {
   transform: scale(1.2);
 }
+
+/* skills section */
 
 .skill-title {
   display: flex;
@@ -223,7 +234,8 @@ main .contact-icons img:hover {
 }
 
 .html .bar {
-  width: 100%;
+  width: 80%;
+  animation: full-bar 10s ease;
 }
 
 .css {
@@ -238,7 +250,26 @@ main .contact-icons img:hover {
 }
 
 .css .bar {
-  width: 100%;
+  width: 80%;
+  animation: full-bar 10s ease;
+}
+
+@keyframes full-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes full-barr {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
 }
 
 .js {
@@ -254,6 +285,7 @@ main .contact-icons img:hover {
 
 .js .bar {
   width: 30%;
+  animation: full-barr 8s ease;
 }
 
 .git {
@@ -269,7 +301,10 @@ main .contact-icons img:hover {
 
 .git .bar {
   width: 30%;
+  animation: full-barr 8s ease;
 }
+
+/* projects section (updating) */
 
 .project-title {
   display: flex;
@@ -369,27 +404,80 @@ main .contact-icons img:hover {
   grid-area: 3 / 3 / 5 / 5;
 }
 
+/* about section */
+
 .about {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: auto;
-  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 15px;
+  margin: 15px;
+  margin-bottom: 100px;
 }
 
-.about h4 {
-  color: #ffffff;
-  width: 95%;
+.about-img {
+  grid-area: 1 / 1 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
   margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
+}
+
+.about-info {
+  grid-area: 1 / 3 / 3 / 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-info h3 {
+  background: #00d4ff;
+  background-clip: text;
+  color: transparent;
+  animation: textcolor 1s infinite alternate;
+}
+
+.about-info h3 img {
+  border: 1px solid white;
+  border-radius: 30%;
+  margin-right: 10px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   padding: 5px;
 }
 
-.about h2 {
-  color: #ffffff;
-  text-align: center;
+@keyframes textcolor {
+  0% {
+    background: #69e4fd;
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: #e8ebed;
+    background-clip: text;
+    color: transparent;
+  }
 }
+
+/* get in touch section */
 
 .contact {
   display: grid;
@@ -502,6 +590,8 @@ textarea:focus {
   color: white;
 }
 
+/* footer section */
+
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -561,9 +651,14 @@ footer .footer-quick-links h5 {
 }
 
 footer .footer-links h5 {
+  vertical-align: middle;
   display: inline-block;
   margin: 5px;
   padding: 2px;
+}
+
+footer .footer-links img {
+  vertical-align: middle;
 }
 
 footer .footer-links div {
@@ -574,7 +669,9 @@ footer h4 {
   text-align: center;
 }
 
-@media (max-width: 992px) {
+/* media queri tablet landscape and laptop */
+
+@media (max-width: 1024px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
@@ -598,10 +695,17 @@ footer h4 {
   footer .copyright {
     grid-column: 1 / 3;
   }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width: 600px) {
-  .nav-left span {
+/* media queri tablet and mobile landscape */
+
+@media (max-width: 768px) {
+  header nav .nav-left a span {
     display: none;
   }
 
@@ -667,7 +771,40 @@ footer h4 {
   footer .copyright {
     grid-column: 1 / 2;
   }
+
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-img img {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+    margin: 0;
+  }
+
+  .about-info {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 }
+
+/* media queri mobile */
+
+@media (max-width: 480px) {
+}
+
+/* media queri */
 
 @media (max-width: 1100px) {
   .contact img {

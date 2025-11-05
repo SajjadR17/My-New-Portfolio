@@ -1,6 +1,10 @@
+/* tag a decoration */
+
 a {
   text-decoration: none;
 }
+
+/* body direction and ... */
 
 * {
   direction: ltr;
@@ -8,9 +12,13 @@ a {
   font-family: Vazirmatn, Poppins;
 }
 
+/* scroll smooth */
+
 html {
   scroll-behavior: smooth;
 }
+
+/* body */
 
 body {
   font-family: "Montserrat", "Poppins", sans-serif;
@@ -22,10 +30,14 @@ body {
   user-select: none;
 }
 
+/* img */
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+/* google fonts */
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -134,6 +146,8 @@ img {
   font-weight: 900;
   font-style: italic;
 }
+
+/* scroll bar design */
 
 ::-webkit-scrollbar {
   width: 8px;
