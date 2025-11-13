@@ -25,8 +25,7 @@ body {
   font-size: 16px;
   margin: 0px;
   cursor: default;
-  background: #020024;
-  background: linear-gradient(135deg, #1e1e2f, #3f2b96, #a8c0ff);
+  background: #0f1624;
   user-select: none;
 }
 
@@ -159,10 +158,30 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #38489a, #5c5ace);
+  background: linear-gradient(180deg, #2c2c2c, #4a4a4a);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #2b1ea0, #4361ee);
+  background: linear-gradient(180deg, #2c2c2c, #4a4a4a);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin: 2rem 0;
+  background: #646464;
+  opacity: 0.8;
+}
+
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.6;
 }
