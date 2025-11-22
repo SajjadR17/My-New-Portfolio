@@ -20,21 +20,17 @@
     <!-- 🔹 Keywords -->
     <meta
       name="keywords"
-      content="Sajjad Roohandeh, Front-end developer, SajjadR17, sajjadroohandeh.com, SajjadR17, web developer, front-end, frontend, HTML, CSS, JavaScript, portfolio, Netlify, GitHub"
+      content="Sajjad Roohandeh, Front-end developer, SajjadR17, sajjadroohandeh.com, SajjadR17, web developer, front-end, frontend, HTML, CSS, JavaScript, portfolio, Netlify, Github"
     />
 
     <!-- 🔹 Author -->
     <meta name="author" content="Sajjad Roohandeh" />
 
     <!-- 🔹 Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://sajjadroohandeh.com/assets/favicon.ico"
-    />
+    <link rel="icon" href="https://sajjadroohandeh.com/assests/favicon.ico" />
     <link
       rel="apple-touch-icon"
-      href="https://sajjadroohandeh.com/assets/favicon.ico"
+      href="https://sajjadroohandeh.com/assests/favicon.ico"
     />
 
     <!-- 🔹 Open Graph (for social media preview) -->
@@ -109,10 +105,33 @@
         </div>
         <div class="resume">
           <a href="assests/Sajjad-Roohandeh-Resume.pdf" download=""
-            ><button>Resume</button></a
+            ><button class="resume-btn">Resume</button></a
           >
+          <button class="menu-btn">Menu</button>
         </div>
       </nav>
+      <div class="menu-items">
+        <div>
+          <a href="#profile"><span>Hi section</span></a>
+        </div>
+        <div>
+          <a href="#skill"><span>Skills section</span></a>
+        </div>
+        <div>
+          <a href="#projects"><span>Projects section</span></a>
+        </div>
+        <div>
+          <a href="#about"><span>About section</span></a>
+        </div>
+        <div>
+          <a href="#contact"><span>Contact section</span></a>
+        </div>
+        <div>
+          <a href="assests/Sajjad-Roohandeh-Resume.pdf" download=""
+            ><span>Resume</span></a
+          >
+        </div>
+      </div>
     </header>
     <main>
       <div id="profile" class="profile">
@@ -201,7 +220,7 @@
           <div class="skill-name">
             <div class="skill-name-percentage">
               <span>JS</span>
-              <span>40%</span>
+              <span>60%</span>
             </div>
             <div class="full-bar"><div class="bar"></div></div>
           </div>
@@ -436,22 +455,6 @@
     <script>
       AOS.init();
     </script>
-    <script>
-      window.onscroll = function () {
-        const btn = document.getElementById("go-top");
-        if (
-          document.body.scrollTop > 300 ||
-          document.documentElement.scrollTop > 300
-        ) {
-          btn.style.display = "flex";
-        } else {
-          btn.style.display = "none";
-        }
-      };
-
-      document.getElementById("go-top").addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
