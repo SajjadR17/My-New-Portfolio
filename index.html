@@ -369,29 +369,37 @@
         <div class="contact-img">
           <img src="assests/undraw_compose-email_s6kf.svg" alt="" />
         </div>
-        <form action="https://formspree.io/f/mdkpbzow" method="POST">
+        <form
+          action="https://formspree.io/f/mdkpbzow"
+          method="POST"
+          class="cantact-form"
+        >
           <h2>Get in touch</h2>
           <input
             type="text"
             required
             name="name"
+            class="name-input"
             placeholder="Your Name"
             autocomplete="off"
           />
+          <div class="name-error"></div>
           <input
-            type="email"
+            type="text"
+            class="email-input"
             autocomplete="off"
             name="email"
             required
             placeholder=" Email"
           />
+          <div class="email-error"></div>
           <textarea
             name="message"
             id="message"
             required
             placeholder="message"
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" class="contact-btn">Submit</button>
         </form>
         <div class="contact-img2">
           <img src="assests/undraw_social-notifications_zahe.svg" alt="" />

@@ -890,6 +890,12 @@ footer h4 {
   max-height: 300px;
   opacity: 1;
 }
+
+.error {
+  color: rgb(255, 70, 70);
+  font-weight: 500;
+}
+
 /* media queri tablet landscape and laptop */
 
 @media (max-width: 1024px) {
