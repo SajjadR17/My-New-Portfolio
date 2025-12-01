@@ -1,3 +1,11 @@
+const loading = document.querySelector(".loading");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loading.style.display = "none";
+  }, 5000);
+});
+
 window.onscroll = function () {
   const btn = document.getElementById("go-top");
   if (

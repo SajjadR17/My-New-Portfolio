@@ -1,3 +1,18 @@
+.loading{
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.loading video{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 /* go top button */
 
 #go-top {
@@ -176,17 +191,22 @@ nav .quick-link a span:hover {
 
 .profile-about h1 {
   display: inline-block;
+  font-weight: 600;
   margin: auto;
 }
 
 .profile-about h5 {
   margin: auto;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .profile-about h3 {
   margin: auto;
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 0.8rem;
 }
 
