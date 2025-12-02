@@ -1,4 +1,4 @@
-.loading{
+.loading {
   position: fixed;
   inset: 0;
   z-index: 999;
@@ -8,7 +8,7 @@
   background: #000;
 }
 
-.loading video{
+.loading video {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -130,12 +130,16 @@ nav .quick-link a span:hover {
   border-radius: 0px 0px 20px 20px;
   border: 1px solid #464646;
   padding: 0px 15px;
-  justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(12px);
   background: rgb(255, 255, 255, 0.02);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   flex-direction: column;
+}
+
+.menu-item img {
+  width: 25px;
+  height: 25px;
 }
 
 .menu-items span {
@@ -145,9 +149,9 @@ nav .quick-link a span:hover {
 .menu-items div {
   display: flex;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 5px;
   margin: auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #e8ebed;
   border-bottom: 1px solid #464646;
@@ -388,7 +392,7 @@ main .contact-icons img:hover {
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 90%;
   }
 }
 
@@ -411,7 +415,7 @@ main .contact-icons img:hover {
 }
 
 .js .bar {
-  background: #ffc94a;
+  background: #3d7eff;
   width: 60%;
   animation: full-bar-js 4s ease;
 }
@@ -435,8 +439,8 @@ main .contact-icons img:hover {
 }
 
 .git .bar {
-  background: #ffc94a;
-  width: 50%;
+  background: #3d7eff;
+  width: 90%;
   animation: full-bar-git 4s ease;
 }
 
