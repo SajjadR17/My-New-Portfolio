@@ -27,7 +27,10 @@
     <meta name="author" content="Sajjad Roohandeh" />
 
     <!-- 🔹 Favicon -->
-    <link rel="icon" href="https://sajjadroohandeh.com/src/assets/favicon.ico" />
+    <link
+      rel="icon"
+      href="https://sajjadroohandeh.com/src/assets/favicon.ico"
+    />
     <link
       rel="apple-touch-icon"
       href="https://sajjadroohandeh.com/src/assets/favicon.ico"
@@ -82,7 +85,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <canvas id="gradient"></canvas>
+    <div id="vanta-bg"></div>
     <div class="loading">
       <video src="src/assets/welcome.mp4" autoplay muted playsinline></video>
     </div>
@@ -351,7 +354,8 @@
             <img src="src/assets/age.webp" alt="" />Age : 17
           </h3>
           <h3 class="about-role">
-            <img src="src/assets/web-develpoer.webp" alt="" />Front-End developer
+            <img src="src/assets/web-develpoer.webp" alt="" />Front-End
+            developer
           </h3>
           <h5>
             I'm Sajjad, a Front-end Developer and computer science student who
@@ -459,6 +463,8 @@
     <script>
       AOS.init();
     </script>
-    <script type="module" src="src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
