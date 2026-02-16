@@ -91,11 +91,6 @@ function ProjectsSection() {
           </>
         ))}
       </div>
-      <div className="other-projects">
-        <a href="https://github.com/SajjadR17">
-          <h2>View More Projects →</h2>
-        </a>
-      </div>
     </>
   );
 }

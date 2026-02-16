@@ -2,7 +2,7 @@ name: Deploy Vite Site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # اسم شاخه اصلیت را چک کن (معمولاً main یا master است)
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -31,7 +31,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # اینجا میگیم محتویات پوشه dist رو برای انتشار بردار
           path: "./dist"
 
   deploy:
