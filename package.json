@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "ready-peoject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.16.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "three": "^0.182.0",
-    "vanta": "^0.5.24"
+    "react-router-dom": "^7.14.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
