@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import HeroSec from "./components/HeroSec";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <div class="glow1"></div>
       <div class="glow2"></div>
       <Header />
+      <main className="container">
+        <HeroSec />
+      </main>
     </>
   );
 }

@@ -12,6 +12,10 @@ html {
   scrollbar-gutter: stable;
 }
 
+main{
+  margin-top: 40px;
+}
+
 :root {
   --bg-primary: #0a0c10;
   --bg-secondary: #0f1318;
@@ -25,10 +29,10 @@ html {
   --text-secondary: #8a93a3;
   --text-muted: #5c6470;
 
-  --accent: #7cff6b;
-  --accent2: #5b8cff;
+  --accent: #00d4ff;
+  --accent2: #69119b;
 
-  --fs-h1: clamp(2rem, 5vw, 4rem);
+  --fs-h1: clamp(2rem, 5vw, 3rem);
   --fs-h2: clamp(1.5rem, 3vw, 2rem);
   --fs-h3: clamp(1.2rem, 2vw, 1.5rem);
   --fs-h4: 1rem;
@@ -41,7 +45,7 @@ html {
   --fw-medium: 500;
   --fw-regular: 400;
 
-  --container-width: 1500px;
+  --container-width: 1400px;
 }
 
 body {
@@ -67,10 +71,10 @@ body {
 .bg-grid {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -10;
   background-image:
-    linear-gradient(rgba(124, 255, 107, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 255, 107, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(124, 107, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 107, 255, 0.05) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(
     ellipse 80% 60% at 50% 0%,
@@ -87,11 +91,11 @@ body {
   height: 600px;
   background: radial-gradient(
     circle,
-    rgba(124, 255, 107, 0.18),
+    rgba(246, 165, 255, 0.18),
     transparent 70%
   );
   filter: blur(40px);
-  z-index: 0;
+  z-index: -10;
 }
 
 .glow2 {
@@ -106,7 +110,7 @@ body {
     transparent 70%
   );
   filter: blur(40px);
-  z-index: 0;
+  z-index: -10;
 }
 
 .mono {
@@ -116,6 +120,7 @@ body {
 .container {
   width: min(calc(100% - 40px), var(--container-width));
   margin-inline: auto;
+  z-index: 1;
 }
 
 img,
