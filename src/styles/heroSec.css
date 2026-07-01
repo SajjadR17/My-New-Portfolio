@@ -4,6 +4,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 0 10px;
+  margin: 100px 0;
   z-index: 1;
 }
 
@@ -30,6 +31,7 @@
   justify-content: center;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: all 0.2s ease;
   font-weight: 600;
 }
 
@@ -45,6 +47,11 @@
   color: var(--text-primary);
 }
 
+.hero-contact-btn:hover{
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
 .terminal {
   display: flex;
   flex-direction: column;
@@ -56,72 +63,75 @@
   font-size: 14px;
 }
 
-.terminal-header{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: var(--bg-secondary);
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--bg-secondary);
 }
 
-.terminal-header-circle{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.terminal-header-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.terminal-header-circle:nth-child(1){
-    background-color: rgb(255, 94, 94);
+.terminal-header-circle:nth-child(1) {
+  background-color: rgb(255, 94, 94);
 }
 
-.terminal-header-circle:nth-child(2){
-    background-color: yellow;
+.terminal-header-circle:nth-child(2) {
+  background-color: yellow;
 }
 
-.terminal-header-circle:nth-child(3){
-    background-color: rgb(42, 189, 42);
+.terminal-header-circle:nth-child(3) {
+  background-color: rgb(42, 189, 42);
 }
 
-.terminal-codes{
-    display: flex;
+.terminal-codes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.terminal-code.p {
+  padding-left: 20px;
+}
+
+.const-code {
+  color: var(--accent2);
+}
+
+.str-code {
+  color: var(--accent);
+}
+
+.num-code {
+  color: var(--accent);
+}
+
+@media (max-width: 1000px) {
+  .terminal {
+    width: 340px;
+  }
+
+  .hero-sec{
+    margin: 70px 0;
+  }
+
+  .hero-sec {
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-}
+    gap: 50px;
+    margin: 50px 0;
+  }
 
-.terminal-code.p{
-    padding-left: 20px;
-}
+  .hero-right {
+    width: 100%;
+  }
 
-.const-code{
-    color: var(--accent);
-}
-
-.str-code{
-    color: rgb(83, 214, 83);
-}
-
-.num-code{
-    color: rgb(239, 123, 239);
-}
-
-@media (max-width:1000px) {
-    .terminal{
-        width: 340px;
-    }
-}
-
-@media (max-width:767px) {
-    .hero-sec{
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .hero-right{
-        width: 100%;
-    }
-
-    .terminal{
-        width: 100%;
-    }
+  .terminal {
+    width: 100%;
+  }
 }

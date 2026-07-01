@@ -57,23 +57,35 @@ function Header() {
           </button>
         </div>
         <div className="menu-btns">
+          <a href="#home">
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
+              Home
+            </div>
+          </a>
+          <a href="#about">
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
+              About
+            </div>
+          </a>
+          <a href="#skills">
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
+              Skills
+            </div>
+          </a>
+          <a href="#projects">
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
+              Projects
+            </div>
+          </a>
+          <a href="#contact">
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
+              Contact
+            </div>
+          </a>
           <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">Home</a>
-          </div>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">About</a>
-          </div>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">Skills</a>
-          </div>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">Projects</a>
-          </div>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">Contact</a>
-          </div>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="#home">Resume</a>
+            <a href="" download={true}>
+              Resume
+            </a>
           </div>
         </div>
       </div>

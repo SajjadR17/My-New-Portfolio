@@ -13,7 +13,7 @@ html {
 }
 
 main{
-  margin-top: 40px;
+  padding-bottom: 100px;
 }
 
 :root {
@@ -22,15 +22,15 @@ main{
   --bg-card: #13171d;
   --bg-input: #0c0f13;
 
-  --border: #22272f;
-  --line-soft: #1c2128;
+  --border: #33373d;
+  --line-soft: #64696f;
 
   --text-primary: #e8ecf1;
   --text-secondary: #8a93a3;
   --text-muted: #5c6470;
 
   --accent: #00d4ff;
-  --accent2: #69119b;
+  --accent2: #c065f5;
 
   --fs-h1: clamp(2rem, 5vw, 3rem);
   --fs-h2: clamp(1.5rem, 3vw, 2rem);

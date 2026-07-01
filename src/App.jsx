@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import HeroSec from "./components/HeroSec";
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main className="container">
         <HeroSec />
+        <AboutMe />
       </main>
     </>
   );
