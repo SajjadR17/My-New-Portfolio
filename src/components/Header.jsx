@@ -84,11 +84,11 @@ function Header() {
               Contact
             </div>
           </a>
-          <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-            <a href="" download={true}>
+          <a href="" download={true}>
+            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
               Resume
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </header>

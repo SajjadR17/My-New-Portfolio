@@ -22,10 +22,10 @@ form {
   width: 50%;
 }
 
-.contact-me-desc{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.contact-me-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .input-container {
@@ -74,13 +74,55 @@ form {
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  background-color: var(--accent);
-  border: none;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
   border-radius: 5px;
 }
 
-.mobile{
-    display: none;
+.submit-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mobile {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  gap: 20px;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 30px;
+  flex-direction: column;
+  z-index: 10000;
+  align-items: center;
+}
+
+.modal button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.modal button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 @media (max-width: 1050px) {
@@ -91,6 +133,10 @@ form {
   form {
     width: 100%;
   }
+
+  .modal {
+    width: 70%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -98,15 +144,20 @@ form {
     padding: 20px;
   }
 
-  .mobile{
+  .mobile {
     display: block;
   }
 
-  .laptop{
+  .laptop {
     display: none;
   }
 
-  .contact-sec p{
+  .contact-sec p {
     font-size: 14px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
   }
 }

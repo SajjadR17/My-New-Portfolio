@@ -100,7 +100,7 @@ nav {
   display: none;
   z-index: 9999;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.655);
+  background-color: rgba(0, 0, 0, 0.77);
 }
 
 .overlay.active {
