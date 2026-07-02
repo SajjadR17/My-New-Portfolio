@@ -87,4 +87,8 @@ form {
   .cantact-form {
     padding: 30px;
   }
+
+  .contact-sec p{
+    font-size: 14px;
+  }
 }

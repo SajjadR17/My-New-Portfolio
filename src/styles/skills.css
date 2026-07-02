@@ -37,6 +37,7 @@
 @media (max-width: 767px) {
   .skills {
     grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
   }
 }
 

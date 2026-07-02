@@ -47,9 +47,9 @@
   color: var(--text-primary);
 }
 
-.hero-contact-btn:hover{
-    border-color: var(--accent);
-    color: var(--accent);
+.hero-contact-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .terminal {
@@ -130,5 +130,12 @@
 
   .terminal {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-sec p,
+  .hero-btns {
+    font-size: 14px;
   }
 }
