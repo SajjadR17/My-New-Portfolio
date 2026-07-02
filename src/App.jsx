@@ -1,5 +1,6 @@
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSec from "./components/HeroSec";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         <Projects />
         <ContactMe />
+        <Footer />
       </main>
     </>
   );

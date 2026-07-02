@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid var(--line-soft);
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links a span {
+  transition: all 0.2s ease;
+}
+
+.footer-links a span:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

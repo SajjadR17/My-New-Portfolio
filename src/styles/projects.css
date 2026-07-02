@@ -51,6 +51,9 @@
 .project-description {
   color: var(--text-secondary);
   font-size: 14px;
+  max-height: 85px;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 .project-btns {

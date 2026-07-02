@@ -43,12 +43,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--border);
   border-radius: 5px;
   padding: 5px 15px;
   background-color: transparent;
-  color: var(--accent);
+  transition: all 0.2s ease;
+  color: var(--text-primary);
   font-size: 14px;
+}
+
+.resume-dl-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .open-menu-btn {
@@ -120,6 +126,7 @@ nav {
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .menu-btn:hover {
