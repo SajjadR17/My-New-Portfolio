@@ -22,6 +22,12 @@ form {
   width: 50%;
 }
 
+.contact-me-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -73,6 +79,10 @@ form {
   border-radius: 5px;
 }
 
+.mobile{
+    display: none;
+}
+
 @media (max-width: 1050px) {
   .cantact-form {
     flex-direction: column;
@@ -85,7 +95,15 @@ form {
 
 @media (max-width: 767px) {
   .cantact-form {
-    padding: 30px;
+    padding: 20px;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .laptop{
+    display: none;
   }
 
   .contact-sec p{

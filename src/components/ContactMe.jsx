@@ -9,7 +9,8 @@ function ContactMe() {
       </div>
       <div className="cantact-form">
         <div className="contact-me-desc">
-          <h2>Let's build something great together.</h2>
+          <h2 className="laptop">Let's build something great together.</h2>
+          <h2 className="mobile">Get in touch</h2>
           <p>
             Have a project in mind or just want to say hi? My inbox is always
             open. I usually reply within a day.

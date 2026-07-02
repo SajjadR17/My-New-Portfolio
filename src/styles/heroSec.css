@@ -33,21 +33,13 @@
   border-radius: 5px;
   transition: all 0.2s ease;
   font-weight: 600;
-}
-
-.hero-view-projects-btn {
-  background-color: var(--accent);
-  color: black;
-  border: none;
-}
-
-.hero-contact-btn {
   border: 1px solid var(--border);
   background-color: transparent;
   color: var(--text-primary);
 }
 
-.hero-contact-btn:hover {
+.hero-contact-btn:hover,
+.hero-view-projects-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
