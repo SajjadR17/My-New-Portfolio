@@ -33,7 +33,9 @@ function Header() {
           </span>
         </div>
         <div className="nav-right">
-          <button className="resume-dl-btn">Resume</button>
+          <a href="" download={true}>
+            <button className="resume-dl-btn">Resume</button>
+          </a>
           <button
             className="open-menu-btn"
             onClick={() => setMenuDisplay((prev) => !prev)}

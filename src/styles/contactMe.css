@@ -1,0 +1,89 @@
+.contact-sec {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cantact-form {
+  display: flex;
+  gap: 50px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.input-container input {
+  width: 100%;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  caret-color: var(--accent);
+  transition: all 0.2s ease;
+  padding: 10px;
+  color: var(--text-primary);
+}
+
+.message-input {
+  height: 100px;
+  resize: none;
+  width: 100%;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  caret-color: var(--accent);
+  transition: all 0.2s ease;
+  padding: 10px;
+  color: var(--text-primary);
+}
+
+.message-input:focus,
+.input-container input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 1050px) {
+  .cantact-form {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cantact-form {
+    padding: 30px;
+  }
+}
