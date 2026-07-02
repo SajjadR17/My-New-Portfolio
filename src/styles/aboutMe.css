@@ -2,12 +2,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
-.about-me-header {
+.sec-header {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -17,8 +17,8 @@
   align-items: center;
 }
 
-.about-title {
-  width: 180px;
+.sec-title {
+    white-space: nowrap;
 }
 
 .header-border {
@@ -104,7 +104,4 @@
   .info-card {
     width: 100%;
   }
-}
-
-@media (max-width: 767px) {
 }
