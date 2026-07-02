@@ -29,10 +29,6 @@ function AboutMe() {
               <span className="stat-value">5+</span>
               <span className="stat-title">Projects completed</span>
             </div>
-            <div className="stat">
-              <span className="stat-value"></span>
-              <span className="stat-title"></span>
-            </div>
           </div>
         </div>
         <div className="about-sec-right">
