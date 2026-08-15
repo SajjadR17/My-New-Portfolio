@@ -8,7 +8,7 @@ function HeroSec() {
         <h1>Frontend Developer</h1>
         <p>
           I build modern, responsive and user-friendly web applications using
-          React & JavaScript. Passionate about creating clean interfaces and
+          React & TypeScript. Passionate about creating clean interfaces and
           delivering great user experiences.
         </p>
         <div className="hero-btns">
@@ -41,7 +41,7 @@ function HeroSec() {
               age : <span className="num-code">17</span>
             </span>
             <span className="terminal-code p">
-              status : <span className="str-code">"Creating projects"</span>
+              status : <span className="str-code">"Learning Typescript"</span>
             </span>
             <span className="terminal-code">{`}`}</span>
           </div>

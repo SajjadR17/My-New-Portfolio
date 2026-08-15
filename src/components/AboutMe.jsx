@@ -16,7 +16,7 @@ function AboutMe() {
             user-friendly digital experiences.
           </p>
           <p>
-            Currently deep-diving into the React ecosystem. My mission is to
+            Currently deep-diving into the Typescript ecosystem. My mission is to
             evolve into a Full-Stack Architect, turning complex ideas into
             scalable, high-performance web applications.
           </p>
