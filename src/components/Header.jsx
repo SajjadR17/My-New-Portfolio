@@ -33,7 +33,7 @@ function Header() {
           </span>
         </div>
         <div className="nav-right">
-          <a href="" download={true}>
+          <a href="/Sajjad-Roohandeh.pdf" download="Sajjad-Roohandeh.pdf">
             <button className="resume-dl-btn">Resume</button>
           </a>
           <button
@@ -84,7 +84,7 @@ function Header() {
               Contact
             </div>
           </a>
-          <a href="" download={true}>
+          <a href="/Sajjad-Roohandeh.pdf" download="Sajjad-Roohandeh.pdf">
             <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
               Resume
             </div>
