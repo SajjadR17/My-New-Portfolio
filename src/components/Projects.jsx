@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="projects-sec" id="projects">
+    <section className="projects-sec" id="projects">
       <div className="sec-header">
         <h2 className="sec-title">Projects</h2>
         <div className="header-border"></div>
@@ -11,20 +11,23 @@ function Projects() {
       <div className="projects">
         <ProjectCard
           pName="Weatherly"
-          pDesc="A modern weather application that provides real-time weather forecasts using the OpenWeatherMap API. Built with React, featuring a clean, responsive interface and dynamic weather updates."
-          pTechs={["React", "JS", "OWM API"]}
+          pDesc="A modern weather application that provides real-time weather data and forecasts using the OpenWeatherMap API. Built with React with a responsive interface and dynamic weather-based content."
+          pTechs={["React", "JavaScript", "REST API"]}
           links={[
             {
               name: "Source",
               link: "https://github.com/SajjadR17/weather-app.git",
             },
-            { name: "Demo", link: "https://weatherly-app-sr.vercel.app/" },
+            {
+              name: "Demo",
+              link: "https://weatherly-app-sr.vercel.app/",
+            },
           ]}
         />
         <ProjectCard
           pName="Calculator"
-          pDesc="A responsive calculator application with a clean and intuitive user interface. Supports all basic arithmetic operations while focusing on accuracy, performance, and user experience."
-          pTechs={["React", "JS"]}
+          pDesc="A responsive calculator application built with React and JavaScript. It supports essential arithmetic operations with a focus on clean UI, accurate calculations, and a smooth user experience."
+          pTechs={["React", "JavaScript"]}
           links={[
             {
               name: "Source",
@@ -38,8 +41,8 @@ function Projects() {
         />
         <ProjectCard
           pName="Ink & Field"
-          pDesc="A modern blog platform where users can explore posts with authentication powered by Firebase and Firestore."
-          pTechs={["React", "JS", "Firebase", "Firestore"]}
+          pDesc="A modern blog platform where users can explore and manage blog content. Includes user authentication and cloud data management using Firebase and Firestore."
+          pTechs={["React", "JavaScript", "Firebase"]}
           links={[
             {
               name: "Source",
@@ -51,11 +54,10 @@ function Projects() {
             },
           ]}
         />
-
         <ProjectCard
-          pName="Nightline Ai"
-          pDesc="An AI-powered chat application with conversational history, multiple AI models, web search, image generation, and personalized user context, built with React and Firebase."
-          pTechs={["React", "JS", "Groq", "Firebase", "Firestore"]}
+          pName="Nightline AI"
+          pDesc="An AI-powered chat application featuring conversational history, multiple AI models, web search, image generation, and personalized user context."
+          pTechs={["React", "JavaScript", "Groq", "Firebase"]}
           links={[
             {
               name: "Source",
@@ -68,7 +70,7 @@ function Projects() {
           ]}
         />
       </div>
-    </div>
+    </section>
   );
 }
 
