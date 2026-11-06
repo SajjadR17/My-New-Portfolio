@@ -16,11 +16,11 @@
     Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  --fs-h1: clamp(2.6rem, 7.5vw, 4.5rem);
+  --fs-h1: clamp(2.6rem, 7.5vw, 4.3rem);
   --fs-h2: clamp(2.4rem, 5.5vw, 3.5rem);
   --fs-h3: clamp(1.4rem, 2.4vw, 1.5rem);
   --fs-h4: 1.125rem;
-  --fs-body: 1.0625rem;
+  --fs-body: clamp(1rem, 2vw, 1.1rem);
 
   --fw-semi-bold: 800;
   --fw-bold: 900;
@@ -139,6 +139,13 @@ h4 {
 p {
   font-size: var(--fs-body);
   color: var(--text-secondary);
-  max-width: 62ch;
   text-wrap: pretty;
+}
+
+.card,
+.win {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: var(--border-width) solid var(--text-primary);
+  box-shadow: var(--shadow);
 }

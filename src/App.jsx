@@ -11,8 +11,8 @@ function App() {
     <>
       <Header />
       <main id="top" className="container">
-        {/* <HeroSec />
-        <AboutMe />
+        <HeroSec />
+        {/* <AboutMe />
         <Skills />
         <Projects />
         <ContactMe />
