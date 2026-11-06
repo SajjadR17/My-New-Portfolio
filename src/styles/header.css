@@ -20,13 +20,13 @@ nav {
 }
 
 .burger {
-  width: 50px;
-  height: 45px;
+  width: 40px;
+  height: 35px;
   border: var(--border-width) solid var(--text-primary);
   background: var(--bg-primary);
   display: grid;
   place-content: center;
-  gap: 5px;
+  gap: 3px;
   cursor: pointer;
   box-shadow: var(--shadow);
   transition: all 0.12s ease;
@@ -38,14 +38,14 @@ nav {
 }
 
 .burger i {
-  width: 24px;
+  width: 20px;
   height: 3px;
   background: var(--text-primary);
   transition: all 0.2s ease;
 }
 
 .burger[aria-expanded="true"] i:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .burger[aria-expanded="true"] i:nth-child(2) {
@@ -53,7 +53,7 @@ nav {
 }
 
 .burger[aria-expanded="true"] i:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 #menu {

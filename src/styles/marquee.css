@@ -1,0 +1,25 @@
+.marquee {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  overflow: hidden;
+  border-top: var(--border-width) solid var(--text-primary);
+  padding: 20px 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  font: 900 1.5rem var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.track span {
+  padding: 0 35px;
+}
+
+@media (max-width: 767px) {
+  .track span {
+    padding: 0 20px;
+  }
+}

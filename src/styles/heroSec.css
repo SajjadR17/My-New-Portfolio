@@ -1,5 +1,6 @@
 .hero {
   padding: clamp(56px, 8vw, 96px) 0 clamp(72px, 9vw, 112px);
+  padding-inline: 20px;
 }
 
 .hero-row {
@@ -128,7 +129,7 @@
     top: -10px;
   }
 
-  .btn{
+  .btn {
     width: 100%;
   }
 }

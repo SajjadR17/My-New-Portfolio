@@ -70,7 +70,7 @@ function HeroSec() {
   );
 
   return (
-    <section className="hero" ref={root}>
+    <section className="hero container" ref={root}>
       <div>
         <h1 aria-label="Sajjad Roohandeh">
           <span className="line" style={maskStyle} aria-hidden="true">
@@ -83,7 +83,9 @@ function HeroSec() {
         <div className="hero-row">
           <div>
             <p className="hero-sub">
-              Frontend developer with 1 years of experience building modern, responsive web applications with React and TypeScript, focusing on clean code, scalable architecture, and intuitive user experiences.
+              Frontend developer with 1 years of experience building modern,
+              responsive web applications with React and TypeScript, focusing on
+              clean code, scalable architecture, and intuitive user experiences.
             </p>
             <div className="hero-cta">
               <a className="btn solid" href="#projects">
