@@ -1,96 +1,71 @@
-import { BiMenu } from "react-icons/bi";
+import { useEffect, useRef, useState } from "react";
 import "../styles/header.css";
-import { useState } from "react";
+
+const LINKS = [
+  ["About", "#about"],
+  ["Skills", "#skills"],
+  ["Projects", "#projects"],
+  ["Now", "#now"],
+  ["Uses", "#uses"],
+  ["Contact", "#contact"],
+];
 
 function Header() {
-  const [menuDisplay, setMenuDisplay] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+  const burgerRef = useRef(null);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        setMenuOpen(false);
+        burgerRef.current?.focus();
+      }
+    };
+    const onClick = (e) => {
+      if (!headerRef.current?.contains(e.target)) setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("click", onClick);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("click", onClick);
+    };
+  }, [menuOpen]);
 
   return (
-    <header>
-      <nav className="mono">
-        <div className="brand">
-          <div className="brand-logo">
-            <img src="/favicon.ico" alt="" />
-            <h3 className="logo">Sajjad</h3>
-            <span className="accent">Dev</span>
-          </div>
-        </div>
-        <div className="nav-links">
-          <span className="nav-link">
-            <a href="#home">Home</a>
-          </span>
-          <span className="nav-link">
-            <a href="#about">About</a>
-          </span>
-          <span className="nav-link">
-            <a href="#skills">Skills</a>
-          </span>
-          <span className="nav-link">
-            <a href="#projects">Projects</a>
-          </span>
-          <span className="nav-link">
-            <a href="#contact">Contact</a>
-          </span>
-        </div>
-        <div className="nav-right">
-          <a href="/Sajjad-Roohandeh.pdf" download="Sajjad-Roohandeh.pdf">
-            <button className="resume-dl-btn">Resume</button>
-          </a>
-          <button
-            className="open-menu-btn"
-            onClick={() => setMenuDisplay((prev) => !prev)}
-          >
-            <BiMenu size={25} />
-          </button>
-        </div>
+    <header ref={headerRef}>
+      <nav className="container" aria-label="Main">
+        <a className="logo" href="#top">
+          SR.
+        </a>
+        <button
+          ref={burgerRef}
+          className="burger"
+          type="button"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          title={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="menu"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <i></i>
+          <i></i>
+          <i></i>
+        </button>
+        {menuOpen && (
+          <ul id="menu" className={menuOpen ? "open" : ""}>
+            {LINKS.map(([label, href]) => (
+              <li key={href}>
+                <a href={href} onClick={() => setMenuOpen(false)}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
-      <div
-        onClick={() => setMenuDisplay(false)}
-        className={`overlay ${menuDisplay ? "active" : null}`}
-      ></div>
-      <div className={`mobile-menu mono ${menuDisplay ? "active" : null}`}>
-        <div className="menu-header">
-          <span className="menu-title">Menu</span>
-          <button
-            className="close-menu-btn"
-            onClick={() => setMenuDisplay(false)}
-          >
-            ✖
-          </button>
-        </div>
-        <div className="menu-btns">
-          <a href="#home">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              Home
-            </div>
-          </a>
-          <a href="#about">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              About
-            </div>
-          </a>
-          <a href="#skills">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              Skills
-            </div>
-          </a>
-          <a href="#projects">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              Projects
-            </div>
-          </a>
-          <a href="#contact">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              Contact
-            </div>
-          </a>
-          <a href="/Sajjad-Roohandeh.pdf" download="Sajjad-Roohandeh.pdf">
-            <div className="menu-btn" onClick={() => setMenuDisplay(false)}>
-              Resume
-            </div>
-          </a>
-        </div>
-      </div>
     </header>
   );
 }

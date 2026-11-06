@@ -9,17 +9,14 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
-      <div class="bg-grid"></div>
-      <div class="glow1"></div>
-      <div class="glow2"></div>
       <Header />
-      <main className="container">
-        <HeroSec />
+      <main id="top" className="container">
+        {/* <HeroSec />
         <AboutMe />
         <Skills />
         <Projects />
         <ContactMe />
-        <Footer />
+        <Footer /> */}
       </main>
     </>
   );

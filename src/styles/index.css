@@ -1,3 +1,31 @@
+:root {
+  --bg-primary: #fff;
+  --text-primary: #000;
+  --text-secondary: #595959;
+
+  --border-width: 3px;
+  --shadow-offset: 4px;
+  --shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-secondary);
+  --shadow-hover: 2px 2px 0 var(--text-secondary);
+
+  --container-width: 1200px;
+
+  --font-display: "Archivo", "Arial Black", sans-serif;
+  --font-body:
+    "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-h1: clamp(2.6rem, 7.5vw, 4.5rem);
+  --fs-h2: clamp(2.4rem, 5.5vw, 3.5rem);
+  --fs-h3: clamp(1.4rem, 2.4vw, 1.5rem);
+  --fs-h4: 1.125rem;
+  --fs-body: 1.0625rem;
+
+  --fw-semi-bold: 800;
+  --fw-bold: 900;
+}
+
 *,
 *::before,
 *::after {
@@ -9,114 +37,25 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  scrollbar-gutter: stable;
-}
-
-:root {
-  --bg-primary: #0a0c10;
-  --bg-secondary: #0f1318;
-  --bg-card: #13171d;
-  --bg-input: #0f1317;
-
-  --border: #33373d;
-  --line-soft: #373b3f;
-
-  --text-primary: #e8ecf1;
-  --text-secondary: #8a93a3;
-  --text-muted: #5c6470;
-
-  --accent: #00d4ff;
-  --accent2: #c065f5;
-
-  --fs-h1: clamp(2rem, 5vw, 3rem);
-  --fs-h2: clamp(1.5rem, 3vw, 2rem);
-  --fs-h3: clamp(1.2rem, 2vw, 1.5rem);
-  --fs-h4: 1rem;
-
-  --fs-body: 1rem;
-  --fs-small: 0.875rem;
-
-  --fw-bold: 700;
-  --fw-semi-bold: 600;
-  --fw-medium: 500;
-  --fw-regular: 400;
-
-  --container-width: 1400px;
+  scroll-padding-top: 84px;
 }
 
 body {
-  min-height: 100vh;
-  font-family:
-    "Space Grotesk",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-
+  min-height: 100dvh;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
   line-height: 1.5;
-  background-color: #0a0c10;
-  position: relative;
+  background-color: var(--bg-primary);
   color: var(--text-primary);
+  position: relative;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-.bg-grid {
-  position: fixed;
-  inset: 0;
-  z-index: -10;
-  background-image:
-    linear-gradient(rgba(124, 107, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 107, 255, 0.05) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(
-    ellipse 80% 60% at 50% 0%,
-    black 40%,
-    transparent 100%
-  );
-}
-
-.glow1 {
-  position: fixed;
-  top: -200px;
-  left: -100px;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(
-    circle,
-    rgba(246, 165, 255, 0.18),
-    transparent 70%
-  );
-  filter: blur(40px);
-  z-index: -10;
-}
-
-.glow2 {
-  position: fixed;
-  top: 200px;
-  right: -200px;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(
-    circle,
-    rgba(91, 140, 255, 0.15),
-    transparent 70%
-  );
-  filter: blur(40px);
-  z-index: -10;
-}
-
-.mono {
-  font-family: "JetBrains Mono", monospace;
-}
-
 .container {
-  width: min(calc(100% - 40px), var(--container-width));
+  width: min(calc(100%), var(--container-width));
   margin-inline: auto;
-  z-index: 1;
+  padding-inline: 20px;
 }
 
 img,
@@ -126,6 +65,11 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
 }
 
 a {
@@ -138,6 +82,7 @@ input,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 button {
@@ -149,38 +94,51 @@ ol {
   list-style: none;
 }
 
+::selection {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+:focus-visible {
+  outline: var(--border-width) solid var(--text-primary);
+  outline-offset: 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
 h1 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
-  line-height: 1.1;
+  line-height: 1.02;
 }
 
 h2 {
   font-size: var(--fs-h2);
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-bold);
+  line-height: 1.05;
 }
 
 h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-semi-bold);
+  line-height: 1.1;
 }
 
 h4 {
   font-size: var(--fs-h4);
   font-weight: var(--fw-semi-bold);
+  line-height: 1.2;
 }
 
 p {
   font-size: var(--fs-body);
   color: var(--text-secondary);
-}
-
-small {
-  font-size: var(--fs-small);
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: min(calc(100% - 24px), var(--container-width));
-  }
+  max-width: 62ch;
+  text-wrap: pretty;
 }

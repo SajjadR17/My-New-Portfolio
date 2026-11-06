@@ -1,6 +1,6 @@
 # 🧠 Sajjad Rohandeh — Personal Portfolio
 
-sajjadroohandeh.com
+sajjad-roohandeh.ir
 
 A modern and responsive personal portfolio website built using React.  
 It showcases my projects, skills, and growth as a self-taught frontend developer.

@@ -3,57 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=Instrument+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <meta name="robots" content="index, follow" />
 
-    <!-- 🔹 Site Title -->
+    <!-- Title + description (Google SEO) -->
     <title>Sajjad Roohandeh | Front-End Developer</title>
-
-    <!-- 🔹 Description (for Google SEO) -->
     <meta
       name="description"
-      content="I'm Sajjad Roohandeh, a Front-end developer from Iran who creates modern, responsive, and creative websites using React and Javascript. Check out my portfolio and projects."
+      content="I'm Sajjad Roohandeh, a front-end developer from Iran who creates modern, responsive and creative websites using React and TypeScript. Check out my portfolio and projects."
     />
-
-    <!-- 🔹 Keywords -->
-    <meta
-      name="keywords"
-      content="Sajjad Roohandeh, Sajjad , site , site order , Front-end developer, SajjadR17, sajjadroohandeh.com, web developer, front-end, frontend, HTML, CSS, JavaScript, React , portfolio, Netlify, Github , سجاد , سجاد روهنده , روهنده , طراحی سایت , طراح سایت , برنامه نویس , سفارش سایت , سایت , ساخت سایت"
-    />
-
-    <!-- 🔹 Author -->
     <meta name="author" content="Sajjad Roohandeh" />
+    <link rel="canonical" href="https://sajjad-roohandeh.ir/" />
 
-    <!-- 🔹 Favicon -->
-    <link rel="icon" href="https://sajjadroohandeh.com/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      href="https://sajjadroohandeh.com/favicon.ico"
-    />
-
-    <!-- 🔹 Open Graph (for social media preview) -->
+    <!-- Open Graph (social media preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sajjad-roohandeh.ir/" />
     <meta
       property="og:title"
       content="Sajjad Roohandeh | Front-End Developer"
     />
     <meta
       property="og:description"
-      content="Explore Sajjad's portfolio — creative and responsive web projects built with passion and clean code."
+      content="Explore Sajjad's portfolio: creative and responsive web projects built with passion and clean code."
     />
     <meta
       property="og:image"
-      content="https://sajjadroohandeh.com/preview.jpg"
+      content="https://sajjad-roohandeh.ir/og-image.png"
     />
-    <meta property="og:url" content="https://sajjadroohandeh.com" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Sajjad Roohandeh, Front-End Developer"
+    />
 
-    <!-- 🔹 Twitter Card -->
+    <!-- Twitter / X card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -65,13 +60,24 @@
     />
     <meta
       name="twitter:image"
-      content="https://sajjadroohandeh.com/preview.jpg"
+      content="https://sajjad-roohandeh.ir/og-image.png"
     />
 
-    <link rel="canonical" href="https://sajjadroohandeh.com/" />
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sajjad Roohandeh",
+        "url": "https://sajjad-roohandeh.ir/",
+        "jobTitle": "Front-End Developer",
+        "knowsAbout": ["React", "TypeScript", "JavaScript", "HTML", "CSS"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>This site needs JavaScript to run.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
