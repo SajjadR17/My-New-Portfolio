@@ -14,8 +14,8 @@ function App() {
       <main id="top">
         <HeroSec />
         <Marquee />
-        {/* <AboutMe />
-        <Skills />
+        <AboutMe />
+        {/* <Skills />
         <Projects />
         <ContactMe />
         <Footer /> */}

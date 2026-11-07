@@ -1,0 +1,45 @@
+#about {
+  padding: 80px 20px;
+  margin-inline: auto;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(40px, 6vw, 70px);
+  margin-top: 30px;
+}
+
+.about p + p {
+  margin-top: 20px;
+}
+
+.about p {
+  color: var(--text-primary);
+}
+
+.facts {
+  padding: 10px 25px;
+  font-size: var(--fs-body);
+}
+
+.facts li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.facts li:last-child {
+  border: 0;
+}
+
+.facts b {
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
