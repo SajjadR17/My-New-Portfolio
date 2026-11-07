@@ -12,7 +12,7 @@ It showcases my projects, skills, and growth as a self-taught frontend developer
 - 🎨 Clean and minimal design
 - ⚡ Fully responsive layout for all devices
 - 🧩 Sections for About, Skills, Featured Projects, Get in touch section, About section and ...
-- 💎 Smooth hover transitions and subtle animations
+- 💎 Smooth hover transitions and animations
 - 🔗 Integrated social links (Instagram, LinkedIn, GitHub)
 
 ---

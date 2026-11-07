@@ -15,8 +15,8 @@ function App() {
         <HeroSec />
         <Marquee />
         <AboutMe />
-        {/* <Skills />
-        <Projects />
+        <Skills />
+        {/* <Projects />
         <ContactMe />
         <Footer /> */}
       </main>
