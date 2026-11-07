@@ -87,10 +87,10 @@ function HeroSec() {
             clean code, scalable architecture, and intuitive user experiences.
           </p>
           <div className="hero-cta">
-            <a className="btn solid" href="#projects">
+            <a className="btn solid" href="#projects-sec">
               See my work
             </a>
-            <a className="btn" href="#contact">
+            <a className="btn" href="#contact-sec">
               Get in touch
             </a>
           </div>

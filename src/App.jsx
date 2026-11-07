@@ -7,6 +7,7 @@ import Marquee from "./components/Marquee";
 import Now from "./components/Now";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Uses from "./components/Uses";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Now />
+        <Uses />
         {/* <ContactMe />
         <Footer /> */}
       </main>
