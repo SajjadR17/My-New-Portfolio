@@ -53,42 +53,40 @@ function AboutMe() {
   );
 
   return (
-    <section id="about" ref={root} className="container">
-      <div>
-        <h2 className="about-title">About</h2>
-        <div class="about">
-          <div className="about-text">
-            <p>
-              I’m Sajjad, an 18 year old frontend developer from Iran. I build
-              web apps with React and TypeScript, and I care about the details
-              that make an interface feel right: how fast it loads, how it works
-              with a keyboard, and how it moves.
-            </p>
-            <p>
-              I enjoy turning designs into clean, accessible, responsive code,
-              and I like working with designers and backend developers to ship
-              products that are simple to use and easy to maintain
-            </p>
-          </div>
-          <ul class="facts card">
-            <li>
-              <span>Based in</span>
-              <b>Tehran</b>
-            </li>
-            <li>
-              <span>Coding</span>
-              <b>1 year</b>
-            </li>
-            <li>
-              <span>Focus</span>
-              <b>React, UI systems</b>
-            </li>
-            <li>
-              <span>Languages</span>
-              <b>English, Persian</b>
-            </li>
-          </ul>
+    <section id="about-sec" ref={root} className="container">
+      <h2 className="about-title">About</h2>
+      <div class="about">
+        <div className="about-text">
+          <p>
+            I’m Sajjad, an 18 year old frontend developer from Iran. I build web
+            apps with React and TypeScript, and I care about the details that
+            make an interface feel right: how fast it loads, how it works with a
+            keyboard, and how it moves.
+          </p>
+          <p>
+            I enjoy turning designs into clean, accessible, responsive code, and
+            I like working with designers and backend developers to ship
+            products that are simple to use and easy to maintain
+          </p>
         </div>
+        <ul class="facts card">
+          <li>
+            <span>Based in</span>
+            <b>Tehran</b>
+          </li>
+          <li>
+            <span>Coding</span>
+            <b>1 year</b>
+          </li>
+          <li>
+            <span>Focus</span>
+            <b>React, UI systems</b>
+          </li>
+          <li>
+            <span>Languages</span>
+            <b>English, Persian</b>
+          </li>
+        </ul>
       </div>
     </section>
   );

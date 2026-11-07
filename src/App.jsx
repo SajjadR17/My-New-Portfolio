@@ -16,8 +16,8 @@ function App() {
         <Marquee />
         <AboutMe />
         <Skills />
-        {/* <Projects />
-        <ContactMe />
+        <Projects />
+        {/* <ContactMe />
         <Footer /> */}
       </main>
     </>

@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import "../styles/header.css";
 
 const LINKS = [
-  ["About", "#about"],
-  ["Skills", "#skills"],
-  ["Projects", "#projects"],
-  ["Now", "#now"],
-  ["Uses", "#uses"],
-  ["Contact", "#contact"],
+  ["About", "#about-sec"],
+  ["Skills", "#skills-sec"],
+  ["Projects", "#projects-sec"],
+  ["Now", "#now-sec"],
+  ["Uses", "#uses-sec"],
+  ["Contact", "#contact-sec"],
 ];
 
 function Header() {

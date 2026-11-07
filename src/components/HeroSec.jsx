@@ -71,52 +71,50 @@ function HeroSec() {
 
   return (
     <section className="hero container" ref={root}>
-      <div>
-        <h1 aria-label="Sajjad Roohandeh">
-          <span className="line" style={maskStyle} aria-hidden="true">
-            <span style={innerStyle}>Sajjad</span>
-          </span>{" "}
-          <span className="line" style={maskStyle} aria-hidden="true">
-            <span style={innerStyle}>Roohandeh</span>
-          </span>
-        </h1>
-        <div className="hero-row">
-          <div>
-            <p className="hero-sub">
-              Frontend developer with 1 years of experience building modern,
-              responsive web applications with React and TypeScript, focusing on
-              clean code, scalable architecture, and intuitive user experiences.
-            </p>
-            <div className="hero-cta">
-              <a className="btn solid" href="#projects">
-                See my work
-              </a>
-              <a className="btn" href="#contact">
-                Get in touch
-              </a>
-            </div>
+      <h1 aria-label="Sajjad Roohandeh">
+        <span className="line" style={maskStyle} aria-hidden="true">
+          <span style={innerStyle}>Sajjad</span>
+        </span>{" "}
+        <span className="line" style={maskStyle} aria-hidden="true">
+          <span style={innerStyle}>Roohandeh</span>
+        </span>
+      </h1>
+      <div className="hero-row">
+        <div>
+          <p className="hero-sub">
+            Frontend developer with 1 years of experience building modern,
+            responsive web applications with React and TypeScript, focusing on
+            clean code, scalable architecture, and intuitive user experiences.
+          </p>
+          <div className="hero-cta">
+            <a className="btn solid" href="#projects">
+              See my work
+            </a>
+            <a className="btn" href="#contact">
+              Get in touch
+            </a>
           </div>
-          <div className="win-wrap">
-            <p className="badge">
-              <span className="dot"></span>Open to work
-            </p>
-            <div className="win" aria-hidden="true">
-              <div className="win-bar">
-                <i></i>
-                <i></i>
-                <i></i>
-                <span>sajjad.ts</span>
-              </div>
-              <pre>
-                <code>
-                  {CODE_LINES.map((line) => (
-                    <span className="cl" style={codeLineStyle} key={line}>
-                      {line}
-                    </span>
-                  ))}
-                </code>
-              </pre>
+        </div>
+        <div className="win-wrap">
+          <p className="badge">
+            <span className="dot"></span>Open to work
+          </p>
+          <div className="win" aria-hidden="true">
+            <div className="win-bar">
+              <i></i>
+              <i></i>
+              <i></i>
+              <span>sajjad.ts</span>
             </div>
+            <pre>
+              <code>
+                {CODE_LINES.map((line) => (
+                  <span className="cl" style={codeLineStyle} key={line}>
+                    {line}
+                  </span>
+                ))}
+              </code>
+            </pre>
           </div>
         </div>
       </div>
