@@ -51,7 +51,7 @@ function App() {
         <Now />
         <Uses />
         <ContactMe />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </>
   );

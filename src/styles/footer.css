@@ -1,0 +1,10 @@
+footer {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-size: 0.9rem;
+  border-top: 2px solid #444;
+}
+
+footer div {
+  padding: 25px 0;
+}
