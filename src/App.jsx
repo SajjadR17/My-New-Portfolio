@@ -25,7 +25,7 @@ function App() {
             fontWeight: "bold",
             fontFamily: "Archivo",
             padding: "15px",
-            border: "var(--border-width) solid var(--text-primary)",
+            border: "2px solid var(--text-primary)",
           },
           success: {
             iconTheme: {

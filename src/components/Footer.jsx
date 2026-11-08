@@ -1,10 +1,14 @@
+import { LuCopyright } from "react-icons/lu";
 import "../styles/footer.css";
 
 function Footer() {
   return (
     <footer>
       <div className="container">
-        2026 Sajjad Roohandeh. Built by hand with React and GSAP.
+        <span>
+          <LuCopyright /> {new Date().getFullYear()} Sajjad Roohandeh.
+        </span>
+        <span>Built by hand with React and GSAP.</span>
       </div>
     </footer>
   );
