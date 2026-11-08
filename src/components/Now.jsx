@@ -51,7 +51,7 @@ function Now() {
     <section id="now-sec" ref={root}>
       <div className="now container">
         <h2 className="now-title">Now</h2>
-        <ul class="now-card card">
+        <ul className="now-card card">
           <li>
             <h4>Learning</h4>
             <span>Advanced TypeScript patterns and Supabase.</span>
@@ -75,7 +75,7 @@ function Now() {
             </span>
           </li>
         </ul>
-        <p class="updated">Last updated: November 2026</p>
+        <p className="updated">Last updated: November 2026</p>
       </div>
     </section>
   );

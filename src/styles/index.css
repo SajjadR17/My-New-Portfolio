@@ -95,7 +95,7 @@ ol {
 }
 
 ::selection {
-  background: var(--text-primary);
+  background: var(--text-secondary);
   color: var(--bg-primary);
 }
 

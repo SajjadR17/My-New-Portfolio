@@ -1,5 +1,5 @@
 .hero {
-  padding: clamp(56px, 8vw, 96px) 0 clamp(72px, 9vw, 112px);
+  padding: clamp(55px, 8vw, 80px) 0 clamp(70px, 9vw, 100px);
   padding-inline: 20px;
 }
 

@@ -82,7 +82,7 @@ function Projects() {
     <section id="projects-sec" ref={root}>
       <div className="projects container">
         <h2 className="projects-title">Projects</h2>
-        <div class="projects-list">
+        <div className="projects-list">
           {PROJECTS.map((project) => (
             <ProjectCard
               key={project.title}

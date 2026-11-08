@@ -55,7 +55,7 @@ function AboutMe() {
   return (
     <section id="about-sec" ref={root} className="container">
       <h2 className="about-title">About</h2>
-      <div class="about">
+      <div className="about">
         <div className="about-text">
           <p>
             I’m Sajjad, an 18 year old frontend developer from Iran. I build web
@@ -69,7 +69,7 @@ function AboutMe() {
             products that are simple to use and easy to maintain
           </p>
         </div>
-        <ul class="facts card">
+        <ul className="facts card">
           <li>
             <span>Based in</span>
             <b>Tehran</b>

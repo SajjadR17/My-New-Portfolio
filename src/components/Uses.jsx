@@ -44,9 +44,9 @@ function Uses() {
 
   return (
     <section id="uses-sec" ref={root}>
-      <div class="uses container">
+      <div className="uses container">
         <h2 className="uses-title">Uses</h2>
-        <dl class="uses-card card">
+        <dl className="uses-card card">
           <div>
             <dt>Editor</dt>
             <dd>VS Code</dd>

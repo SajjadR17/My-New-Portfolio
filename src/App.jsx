@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
@@ -12,6 +13,34 @@ import Uses from "./components/Uses";
 function App() {
   return (
     <>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: "var(--bg-primary)",
+            color: "var(--text-primary)",
+            borderRadius: "5px",
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Archivo",
+            padding: "15px",
+            border: "var(--border-width) solid var(--text-primary)",
+          },
+          success: {
+            iconTheme: {
+              primary: "var(--text-primary)",
+              secondary: "var(--bg-primary)",
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: "var(--text-primary)",
+              secondary: "var(--bg-primary)",
+            },
+          },
+        }}
+      />
       <Header />
       <main id="top">
         <HeroSec />
@@ -21,8 +50,8 @@ function App() {
         <Projects />
         <Now />
         <Uses />
-        {/* <ContactMe />
-        <Footer /> */}
+        <ContactMe />
+        {/* <Footer /> */}
       </main>
     </>
   );

@@ -19,8 +19,8 @@ function Marquee() {
   );
 
   return (
-    <div class="marquee" ref={root} aria-hidden="true">
-      <div class="track">
+    <div className="marquee" ref={root} aria-hidden="true">
+      <div className="track">
         <span>HTML</span>
         <span>CSS</span>
         <span>AI</span>
