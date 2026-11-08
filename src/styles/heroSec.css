@@ -21,8 +21,18 @@
   gap: 20px;
 }
 
+.win:hover .copy-code {
+  display: block;
+}
+
 .win-wrap {
   position: relative;
+}
+
+.copy-code {
+  display: none;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .win-bar {
@@ -57,6 +67,7 @@
   font: 500 0.9rem var(--font-mono);
   overflow-x: auto;
   line-height: 1.5;
+  position: relative;
 }
 
 .badge {
@@ -87,6 +98,22 @@
 @keyframes pulse {
   50% {
     opacity: 0.3;
+  }
+}
+
+.caret {
+  position: absolute;
+  left: 44px;
+  bottom: 27px;
+  height: 18px;
+  width: 2px;
+  background-color: var(--text-secondary);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 

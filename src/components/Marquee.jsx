@@ -5,13 +5,14 @@ import "../styles/marquee.css";
 
 function Marquee() {
   const root = useRef(null);
+  const tween = useRef(null);
 
   useGSAP(
     () => {
-      gsap.to(".track", {
+      tween.current = gsap.to(".track", {
         xPercent: -50,
-        repeat: -1,
         duration: 22,
+        repeat: -1,
         ease: "none",
       });
     },
@@ -19,24 +20,42 @@ function Marquee() {
   );
 
   return (
-    <div className="marquee" ref={root} aria-hidden="true">
+    <div
+      className="marquee"
+      onMouseEnter={() => tween.current?.pause()}
+      onMouseLeave={() => tween.current?.resume()}
+      ref={root}
+      aria-hidden="true"
+    >
       <div className="track">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>AI</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>React</span>
-        <span>Supabase</span>
-        <span>Firebase</span>
-        <span>Git</span>
-        <span>Github</span>
-        <span>Tailwind</span> <span>HTML</span>
-        <span>CSS</span>
-        <span>Vite</span>
-        <span>AI</span>
-        <span>TypeScript</span>
-        <span>React</span>
+        <div className="group">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>AI</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Supabase</span>
+          <span>Firebase</span>
+          <span>Git</span>
+          <span>Github</span>
+          <span>Tailwind</span>
+          <span>Linux</span>
+        </div>
+        <div className="group">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>AI</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Supabase</span>
+          <span>Firebase</span>
+          <span>Git</span>
+          <span>Github</span>
+          <span>Tailwind</span>
+          <span>Linux</span>
+        </div>
       </div>
     </div>
   );

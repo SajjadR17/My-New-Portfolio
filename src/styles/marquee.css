@@ -15,7 +15,13 @@
 }
 
 .track span {
-  padding: 0 35px;
+  padding: 0 40px;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
 }
 
 @media (max-width: 767px) {

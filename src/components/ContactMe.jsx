@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   LuDownload,
   LuGithub,
@@ -16,6 +16,13 @@ import toast from "react-hot-toast";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 function ContactMe() {
+  const [inputs, setInputs] = useState(() => {
+    const savedInputs = localStorage.getItem("contact-form");
+
+    return savedInputs
+      ? JSON.parse(savedInputs)
+      : { name: "", email: "", message: "" };
+  });
   const [sending, setSending] = useState(false);
   const root = useRef(null);
 
@@ -70,6 +77,10 @@ function ContactMe() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
+    if (inputs.message.length > 200) {
+      toast.error("Message cannot exceed 200 characters.");
+      return;
+    }
     setSending(true);
 
     try {
@@ -87,6 +98,8 @@ function ContactMe() {
 
       toast.success("Message sent!");
       form.reset();
+      setInputs({ name: "", email: "", message: "" });
+      localStorage.removeItem("contact-form");
     } catch (err) {
       toast.error(
         err.message && err.message !== "Request failed"
@@ -97,6 +110,10 @@ function ContactMe() {
       setSending(false);
     }
   };
+
+  useEffect(() => {
+    localStorage.setItem("contact-form", JSON.stringify(inputs));
+  }, [inputs]);
 
   return (
     <section id="contact-sec" ref={root} className="contact">
@@ -183,6 +200,10 @@ function ContactMe() {
               spellCheck={false}
               autoComplete="name"
               required
+              value={inputs.name}
+              onChange={(e) =>
+                setInputs((prev) => ({ ...prev, name: e.target.value }))
+              }
             />
           </label>
           <label>
@@ -193,11 +214,29 @@ function ContactMe() {
               spellCheck={false}
               autoComplete="email"
               required
+              value={inputs.email}
+              onChange={(e) =>
+                setInputs((prev) => ({ ...prev, email: e.target.value }))
+              }
             />
           </label>
           <label>
-            Message
-            <textarea name="message" rows={5} required />
+            <div>
+              <span>Message</span>
+              <span
+                className={`message-value-count ${inputs.message.length > 200 ? "max" : ""}`}
+              >
+                {inputs.message.length}/200
+              </span>
+            </div>
+            <textarea
+              value={inputs.message}
+              onChange={(e) =>
+                setInputs((prev) => ({ ...prev, message: e.target.value }))
+              }
+              name="message"
+              required
+            />
           </label>
           <button className="btn" disabled={sending} type="submit">
             {sending ? "Sending..." : "Send message"}

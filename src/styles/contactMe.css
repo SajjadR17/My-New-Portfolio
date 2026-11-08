@@ -76,6 +76,7 @@
   box-shadow: var(--shadow);
   color: var(--text-primary);
   width: 100%;
+  font-size: 0.9rem;
 }
 
 .form textarea {
@@ -91,6 +92,16 @@
 .contact .form .btn {
   width: 100%;
   border-color: var(--text-primary);
+}
+
+.message-value-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-left: 5px;
+}
+
+.message-value-count.max {
+  color: red;
 }
 
 @media (max-width: 800px) {

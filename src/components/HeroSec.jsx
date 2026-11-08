@@ -2,18 +2,11 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import "../styles/heroSec.css";
+import { BsCopy } from "react-icons/bs";
+import toast from "react-hot-toast";
+import { useIranTime } from "../hooks/useTime";
 
 gsap.registerPlugin(useGSAP);
-
-const CODE_LINES = [
-  "const Dev = {",
-  '  name: "Sajjad Roohandeh",',
-  '  role: "Frontend Developer",',
-  '  stack: ["React", "TypeScript"],',
-  '  focus: "UI & accessibility",',
-  "  coffee: Infinity,",
-  "};",
-];
 
 const maskStyle = {
   display: "inline-block",
@@ -26,6 +19,17 @@ const codeLineStyle = { display: "block", whiteSpace: "pre" };
 
 function HeroSec() {
   const root = useRef(null);
+  const time = useIranTime();
+  const CODE_LINES = [
+    "const Dev = {",
+    '  name: "Sajjad Roohandeh",',
+    '  role: "Frontend Developer",',
+    '  stack: ["React", "TypeScript"],',
+    '  focus: "UI & accessibility",',
+    '  location: "Tehran",',
+    `  localTime: "${time}",`,
+    "};",
+  ];
 
   useGSAP(
     () => {
@@ -69,6 +73,24 @@ function HeroSec() {
     { scope: root },
   );
 
+  const copyCode = async () => {
+    const text = `const Dev = {
+  name: "Sajjad Roohandeh",
+  role: "Frontend Developer",
+  stack: ["React", "TypeScript"],
+  focus: "UI & accessibility",
+  location: "Tehran",
+  localTime: "${time}",
+};`;
+
+    try {
+      await navigator.clipboard.writeText(text);
+      toast.success("Copied to clipboard!");
+    } catch {
+      toast.error("Failed to copy. Please try again.");
+    }
+  };
+
   return (
     <section className="hero container" ref={root}>
       <h1 aria-label="Sajjad Roohandeh">
@@ -105,6 +127,7 @@ function HeroSec() {
               <i></i>
               <i></i>
               <span>sajjad.ts</span>
+              <BsCopy size={12} onClick={copyCode} className="copy-code" />
             </div>
             <pre>
               <code>
@@ -113,6 +136,7 @@ function HeroSec() {
                     {line}
                   </span>
                 ))}
+                <div className="caret"></div>
               </code>
             </pre>
           </div>
