@@ -20,12 +20,12 @@ function Projects() {
       demoUrl: "https://weatherly-app-sr.vercel.app",
     },
     {
-      title: "Calculator",
+      title: "Lingoora",
       description:
-        "A responsive calculator application built with React and JavaScript. It supports essential arithmetic operations with a focus on clean UI, accurate calculations, and a smooth user experience.",
-      tags: ["React", "JS"],
-      sourceUrl: "https://github.com/SajjadR17/calculator-app",
-      demoUrl: "https://calculator-app-sr.vercel.app",
+        "An online English-learning platform that connects students with language teachers. It features teacher discovery, online class booking, and a seamless learning experience.",
+      tags: ["React", "TS", "In-Progress"],
+      sourceUrl: "https://github.com/SajjadR17",
+      demoUrl: "https://lingoora.vercel.app",
     },
     {
       title: "Ink & Field",

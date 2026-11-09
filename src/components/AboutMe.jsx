@@ -58,15 +58,15 @@ function AboutMe() {
       <div className="about">
         <div className="about-text">
           <p>
-            I’m Sajjad, an 18 year old frontend developer from Iran. I build web
-            apps with React and TypeScript, and I care about the details that
-            make an interface feel right: how fast it loads, how it works with a
-            keyboard, and how it moves.
+            I'm Sajjad, an 18-year-old frontend developer based in Tehran,
+            Iran. I build web applications with React and TypeScript, turning
+            ideas into responsive, intuitive, and maintainable interfaces. I
+            care about writing clean code, paying attention to details, and
+            understanding how things work under the hood.
           </p>
           <p>
-            I enjoy turning designs into clean, accessible, responsive code, and
-            I like working with designers and backend developers to ship
-            products that are simple to use and easy to maintain
+            I enjoy learning new technologies, exploring better ways to build
+            for the web, and turning what I learn into real projects.
           </p>
         </div>
         <ul className="facts card">

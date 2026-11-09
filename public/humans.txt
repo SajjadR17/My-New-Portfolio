@@ -1,0 +1,24 @@
+/* TEAM */
+Developer: Sajjad Roohandeh
+Role: Front-End Developer
+Location: Iran, Tehran
+GitHub: https://github.com/SajjadR17
+LinkedIn: https://www.linkedin.com/in/sajjad-roohandeh
+Instagram: https://instagram.com/web_sajjad
+Telegram: https://t.me/SAJJAD_R17
+
+/* THANKS */
+Fonts: Archivo and Instrument Sans (Google Fonts)
+Icons: Lucide (via react-icons)
+Forms: Formspree
+animations: GSAP React
+toast: react-hot-toast
+
+/* SITE */
+URL: https://sajjad-roohandeh.ir
+Last update: 2026/11/08
+Language: English
+Standards: HTML5, CSS3, ECMAScript
+Components: React, GSAP
+Software: VS Code, Vite, Git
+Hosting: GitHub Pages

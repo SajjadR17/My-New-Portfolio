@@ -104,7 +104,7 @@ function HeroSec() {
       <div className="hero-row">
         <div>
           <p className="hero-sub">
-            Frontend developer with 1 years of experience building modern,
+            Frontend developer with 1 year of coding, building modern,
             responsive web applications with React and TypeScript, focusing on
             clean code, scalable architecture, and intuitive user experiences.
           </p>
